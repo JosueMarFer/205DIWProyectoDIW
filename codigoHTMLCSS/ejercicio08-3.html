@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            margin: 5rem;
+        }
+
+        li {
+
+            list-style: none;
+
+            display: inline-block;
+
+            margin-right: 3rem;
+
+        }
+
+
+
+        a {
+
+            display: block;
+
+            width: 128px;
+            height: 48px;
+
+            text-decoration: none;
+
+
+
+            font-weight: 900;
+
+            letter-spacing: .2px;
+
+            line-height: 48px;
+
+            text-align: center;
+
+        }
+
+        ul li:nth-of-type(1) {
+            background: deeppink;
+        }
+
+        ul li:nth-of-type(2) {
+            background: burlywood;
+        }
+
+        ul li:nth-of-type(3) {
+            background: orangered;
+        }
+
+        article a {
+            background: green;
+            color: white;
+            border-radius: 10px;
+        }
+
+        article * {
+            margin: 5rem;
+        }
+
+        #a1 {
+            background: gray;
+            color: white;
+            margin: 5rem;
+            padding: 5rem;
+        }
+
+        #a2 {
+            background: chocolate;
+            margin: 5rem;
+            padding: 5rem;
+        }
+
+        #a3 {
+            background: turquoise;
+            margin: 5rem;
+            padding: 5rem;
+        }
+
+        article:target {
+            background: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ini"></div>
+    <nav>
+        <ul>
+            <li><a href="#a1">PRIMERO</a></li>
+
+            <li><a href="#a2">SEGUNDO</a></li>
+
+            <li><a href="#a3">TERCERO</a></li>
+        </ul>
+    </nav>
+    <article id="a1">
+        <h2>Articulo UNO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad praesentium nisi itaque! Odio, sint! Rerum fuga
+            animi at assumenda placeat quo, repellendus, minus, libero officiis suscipit fugit ipsam alias aspernatur!
+        </p>
+        <a href="#ini">volver</a>
+    </article>
+    <article id="a2">
+        <h2>Articulo DOS</h2>
+        <p>Quas eos pariatur nostrum nulla quae? Voluptates facilis ex neque labore impedit temporibus quasi nam modi
+            corrupti. Nam velit alias tempore, rem non ipsam. Temporibus voluptate voluptatem nisi doloremque neque.</p>
+        <a href="#ini">volver</a>
+    </article>
+    <article id="a3">
+        <h2>Articulo TRS</h2>
+        <p>Qui dolore facere cupiditate accusamus? Ullam, adipisci! Cupiditate saepe aperiam quas expedita debitis quod
+            magnam accusantium, hic unde temporibus minima ea, sed, et aspernatur? Corporis expedita earum odio illum
+            laborum.</p>
+        <a href="#ini">volver</a>
+    </article>
+</body>
+
+</html>

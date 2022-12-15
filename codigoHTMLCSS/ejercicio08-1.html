@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 95vw;
+        }
+
+        .wrapper1 {
+            width: 30%;
+            float: left;
+        }
+
+        .wrapper2 {
+            width: 30%;
+            float: right;
+        }
+
+        .wrapper2 * {
+            padding: 10px 3px;
+            margin-top: 10px;
+        }
+
+        .container1 p {
+            background: #ccc;
+        }
+
+        .container1 p:first-child {
+            background: blue;
+        }
+
+        .container1 p:last-of-type {
+            background: chocolate;
+        }
+
+        .container1 p {
+            padding: 10px 4px;
+        }
+
+        .container2 ul li:nth-child(3n+2) {
+            background: #f00;
+        }
+
+        .container2 ul li:nth-last-child(3) {
+            background: darksalmon;
+        }
+
+        .container3 p:only-child {
+            padding: 10px;
+            background: chartreuse;
+
+        }
+
+        .container4 p:first-of-type {
+            background: lightblue;
+        }
+
+        .container4 span:first-of-type {
+            display: block;
+            background: white;
+        }
+
+        .container4 p:not(:first-of-type) {
+            background: #ddd;
+        }
+
+        .container4 div {
+            background: yellow;
+            padding: 0;
+        }
+
+        .container5 p:nth-of-type(n) {
+            background-color: #ddd;
+        }
+
+        .container5 p:nth-of-type(2) {
+            background-color: midnightblue;
+        }
+
+        .container5 strong {
+            color: #ddd;
+            background-color: goldenrod;
+            padding: 0;
+        }
+
+        .container6 p {
+            background-color: #ddd
+        }
+
+        .container6 span:only-of-type {
+            background-color: lightcoral;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper1">
+        <div class="container1">
+            <p>paragraph 1</p>
+            <p>paragraph 1</p>
+            <p>paragraph 1</p>
+            <p>paragraph 1</p>
+        </div>
+        <div class="container2">
+            <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+                <li>option 4</li>
+                <li>option 5</li>
+                <li>option 6</li>
+            </ul>
+        </div>
+        <div class="container3">
+            <p>single paragraph</p>
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div class="container4">
+            <p>paragraph one</p>
+            <span>text in span</span>
+            <p>paragraph two</p>
+            <strong>text in strong</strong>
+            <div>this is a div</div>
+            <p>paragraph three</p>
+        </div>
+        <div class="container5">
+            <p>paragraph one</p>
+            <span>text in span</span>
+            <p>paragraph two</p>
+            <strong>text in strong</strong>
+            <div>this is a div</div>
+            <p>paragraph three</p>
+        </div>
+        <div class="container6">
+            <p>paragraph one</p>
+            <span>text in span</span>
+            <p>paragraph two</p>
+            <p>paragraph three</p>
+        </div>
+    </div>
+</body>
+
+</html>
