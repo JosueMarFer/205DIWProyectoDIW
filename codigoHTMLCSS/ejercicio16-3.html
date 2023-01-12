@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 2rem;
+            font-family: cursive;
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            background: darkgoldenrod;
+            position: relative;
+            top: 30px;
+            left: 20px;
+            line-height: 150px;
+            padding-left: 25px;
+            border-radius: 5%;
+        }
+
+        .box:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50px;
+            top: -50px;
+            border-left: 25px solid transparent;
+            border-top: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 25px solid darkgoldenrod;
+        }
+
+        .box:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -50px;
+            left: 200px;
+            border-left: 25px solid transparent;
+            border-top: 25px solid darkgoldenrod;
+            border-right: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+        }
+
+        img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        menu
+        <div class="box">
+            A
+            <img src="http://picsum.photos/50/50" alt="imagen">
+        </div>
+    </div>
+</body>
+
+</html>
