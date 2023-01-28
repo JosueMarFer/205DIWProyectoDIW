@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 98vw;
+        height: 100vh;
+        padding: 10px;
+        background: grey;
+        gap: 10px;
+      }
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+      }
+      #headerText {
+        background: cadetblue;
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+      }
+      header {
+        flex: 100%;
+        height: 20%;
+        background: darkseagreen;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      #search {
+        height: 48px;
+      }
+      nav {
+        background: coral;
+        flex: 20%;
+        height: 60%;
+      }
+      main {
+        background: crimson;
+        flex: 58%;
+        height: 60%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      aside {
+        background: goldenrod;
+        flex: 20%;
+        height: 60%;
+      }
+      footer {
+        background: violet;
+        flex: 100%;
+        height: 18%;
+      }
+      article {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: black;
+      }
+      article:nth-child(2) {
+        align-self: center;
+      }
+      article:nth-child(3) {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="http://picsum.photos/100/100" alt="imagen">
+        <input type="search" id="search" placeholder="search">
+        <img src="http://picsum.photos/100/100" alt="imagen">
+        <div id="headerText">header</div>
+      </header>
+      <nav>
+        nav
+      </nav>
+      <main>
+        <article></article>
+        <article></article>
+        <article></article>
+      </main>
+      <aside>
+        aside
+      </aside>
+      <footer>
+        footer
+      </footer>
+    </div>
+  </body>
+</html>

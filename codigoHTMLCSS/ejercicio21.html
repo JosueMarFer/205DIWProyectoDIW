@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      .container {
+        margin: auto;
+        width: 90vw;
+
+      }
+      .tabla1 {
+        flex: 100%;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      section {
+        flex: 25%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        padding: 3px;
+      }
+      section:nth-of-type(2n+5) {
+        background-color: burlywood;
+      }
+      section:nth-of-type(-n+4) {
+        background-color: purple;
+      }
+      section:nth-of-type(2n+6) {
+        background-color: cyan;
+      }
+      .row1,
+      .row2,
+      .row3,
+      .row4,
+      .row5 {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      article {
+        text-align: center;
+        border: black 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+      }
+      .row1 article {
+        flex: 25%;
+        background: greenyellow;
+      }
+      .row2 article {
+        flex: 25%;
+        background: burlywood;
+        padding: 1px;
+      }
+      .row2 article:nth-of-type(2) {
+        flex: 50%;
+      }
+      .row2 img {
+        height: 60px;
+        height: 60px;
+      }
+      .row3 article {
+        flex: 25%;
+        background: cyan;
+      }
+      .row3 article:nth-of-type(n+2):nth-of-type(-n+4) {
+        flex: 16.6%;
+      }
+      .row4 img {
+        height: 60px;
+        height: 60px;
+      }
+      .row4 article {
+        background: darkorange;
+      }
+      .row4 article:nth-of-type(-n+5) img {
+        height: 32px;
+        height: 32px;
+      }
+      .row4 article:nth-of-type(-n+5) {
+        flex: 5%;
+      }
+      .row4 article:nth-of-type(6) {
+        flex: 50%;
+      }
+      .row4 article:nth-of-type(7) {
+        flex: 25%;
+      }
+      .row5 article {
+        flex: 12.5%;
+        background: indianred;
+      }
+      .row5 article:nth-of-type(n+3):nth-of-type(-n+4) {
+        flex: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>TABLAS 1</h2>
+      <div class="tabla1">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section>
+        <section>11</section>
+        <section>12</section>
+        <section>13</section>
+        <section>14</section>
+        <section>15</section>
+        <section>16</section>
+      </div>
+      <h2>TABLAS 2</h2>
+      <div class="tabla2">
+        <div class="row1">
+          <article>1</article>
+          <article>2</article>
+          <article>3</article>
+          <article>4</article>
+        </div>
+        <div class="row2">
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+        </div>
+        <div class="row3">
+          <article>1</article>
+          <article>2</article>
+          <article>3</article>
+          <article>4</article>
+          <article>5</article>
+        </div>
+        <div class="row4">
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+          <article><img src="http://picsum.photos/id/240/100/100" alt="imagen"></article>
+        </div>
+        <div class="row5">
+          <article>1</article>
+          <article>2</article>
+          <article>3</article>
+          <article>4</article>
+          <article>5</article>
+          <article>6</article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

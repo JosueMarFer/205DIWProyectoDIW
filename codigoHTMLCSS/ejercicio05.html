@@ -1,138 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
 
     <style>
-        table {
-            width: 100%;
-            height: 100%;
-            border-collapse: separate;
-            border-spacing: 1em;
-        }
+      table {
+        width: 100%;
+        height: 100%;
+        border-collapse: separate;
+        border-spacing: 1em;
+      }
 
-        td {
-            border: 0.1em solid black;
-            text-align: center;
-            background-color: cornflowerblue;
-            padding: 2em;
-        }
+      td {
+        border: 0.1em solid black;
+        text-align: center;
+        background-color: cornflowerblue;
+        padding: 2em;
+      }
 
-        td:nth-child(1) {
-            width: 65%;
-            background-color: aquamarine;
-        }
+      td:nth-child(1) {
+        width: 65%;
+        background-color: aquamarine;
+      }
 
-        .vacio {
-            height: 1em;
-        }
+      .vacio {
+        height: 1em;
+      }
 
 
-        .vacia {
-            height: 1em;
-        }
+      .vacia {
+        height: 1em;
+      }
 
-        .tabla {
-            width: 100%;
-            height: 100%;
-            display: table;
-        }
+      .tabla {
+        width: 100%;
+        height: 100%;
+        display: table;
+      }
 
-        .row {
-            display: table-row;
-        }
+      .row {
+        display: table-row;
+      }
 
-        .rowb {
-            height: 1em;
-        }
+      .rowb {
+        height: 1em;
+      }
 
-        .cellb {
-            width: 0.5em;
-            background-color: white;
-            border-style: none;
-        }
+      .cellb {
+        width: 0.5em;
+        background-color: white;
+        border-style: none;
+      }
 
-        .cell {
-            display: table-cell;
-            text-align: center;
-            border: 0.1em solid black;
-            padding: 2em;
-            background-color: cornflowerblue;
-        }
+      .cell {
+        display: table-cell;
+        text-align: center;
+        border: 0.1em solid black;
+        padding: 2em;
+        background-color: cornflowerblue;
+      }
 
-        .cell:nth-child(1) {
-            width: 65%;
-            background-color: aquamarine;
-        }
+      .cell:nth-child(1) {
+        width: 65%;
+        background-color: aquamarine;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Tablas con table</h2>
     <table>
-        <tr>
-            <td>celda 1 1</td>
-            <td>celda 1 2</td>
-            <td>celda 1 3</td>
-        </tr>
-        <tr colspan="3" class="vacio"></tr>
-        <tr>
-            <td>celda 2 1</td>
-            <td>celda 2 2</td>
-            <td>celda 2 3</td>
-        </tr>
-        <tr colspan="3" class="vacio"></tr>
-        <tr>
-            <td>celda 3 1</td>
-            <td>celda 3 2</td>
-            <td>celda 3 3</td>
-        </tr>
-        <tr colspan="3" class="vacio"></tr>
-        <tr>
-            <td>celda 4 1</td>
-            <td>celda 4 2</td>
-            <td>celda 4 3</td>
-        </tr>
+      <tr>
+        <td>celda 1 1</td>
+        <td>celda 1 2</td>
+        <td>celda 1 3</td>
+      </tr>
+      <tr colspan="3" class="vacio"></tr>
+      <tr>
+        <td>celda 2 1</td>
+        <td>celda 2 2</td>
+        <td>celda 2 3</td>
+      </tr>
+      <tr colspan="3" class="vacio"></tr>
+      <tr>
+        <td>celda 3 1</td>
+        <td>celda 3 2</td>
+        <td>celda 3 3</td>
+      </tr>
+      <tr colspan="3" class="vacio"></tr>
+      <tr>
+        <td>celda 4 1</td>
+        <td>celda 4 2</td>
+        <td>celda 4 3</td>
+      </tr>
     </table>
     <br>
     <h2>Tablas con DIV</h2>
     <div class="tabla">
-        <div class="row">
-            <div class="cell">celda 1 1</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 1 2</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 1 3</div>
-        </div>
-        <div class="rowb"></div>
-        <div class="row">
-            <div class="cell">celda 2 1</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 2 2</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 2 3</div>
-        </div>
-        <div class="rowb"></div>
-        <div class="row">
-            <div class="cell">celda 3 1</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 3 2</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 3 3</div>
-        </div>
-        <div class="rowb"></div>
-        <div class="row">
-            <div class="cell">celda 4 1</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 4 2</div>
-            <div class="cellb"></div>
-            <div class="cell">celda 4 3</div>
-        </div>
+      <div class="row">
+        <div class="cell">celda 1 1</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 1 2</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 1 3</div>
+      </div>
+      <div class="rowb"></div>
+      <div class="row">
+        <div class="cell">celda 2 1</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 2 2</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 2 3</div>
+      </div>
+      <div class="rowb"></div>
+      <div class="row">
+        <div class="cell">celda 3 1</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 3 2</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 3 3</div>
+      </div>
+      <div class="rowb"></div>
+      <div class="row">
+        <div class="cell">celda 4 1</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 4 2</div>
+        <div class="cellb"></div>
+        <div class="cell">celda 4 3</div>
+      </div>
     </div>
-</body>
+  </body>
 
 </html>

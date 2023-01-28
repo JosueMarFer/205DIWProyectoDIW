@@ -1,105 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 12-2</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container {
-            width: 80vw;
-            height: 80vh;
-            margin: 15px auto;
-            padding: 10px;
-            position: relative;
-            border: solid 1px black;
-            overflow: hidden;
-        }
-
-        div>label {
-            display: inline-block;
-            width: 12rem;
-            height: 4rem;
-            text-align: center;
-            background: dodgerblue;
-            color: white;
-            text-transform: uppercase;
-            font-weight: 900;
-            line-height: 4rem;
-            border-radius: 3px;
-        }
-
-        section label {
-            display: inline-block;
-            width: 4rem;
-            height: 4rem;
-            text-align: center;
-            background: red;
-            color: white;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 2rem;
-            line-height: 4rem;
-            border-radius: 100%;
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-        }
-
-        input {
-            display: none;
-        }
-
-        section {
-            width: 79vw;
-            height: 75vh;
-            background: rgba(0, 128, 0, 0.439);
-            position: absolute;
-            top: 3.5vh;
-            left: -100%;
-            transition: all 1s ease-in-out;
-        }
-
-        section p {
-            width: 70%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: grey;
-            padding: 15px;
-        }
-
-        #brOpen:checked~section {
-            left: 0.5rem;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80vw;
+        height: 80vh;
+        margin: 15px auto;
+        padding: 10px;
+        position: relative;
+        border: solid 1px black;
+        overflow: hidden;
+      }
+      div>label {
+        display: inline-block;
+        width: 12rem;
+        height: 4rem;
+        text-align: center;
+        background: dodgerblue;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 4rem;
+        border-radius: 3px;
+      }
+      section label {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        background: red;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 4rem;
+        border-radius: 100%;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+      }
+      input {
+        display: none;
+      }
+      section {
+        width: 79vw;
+        height: 75vh;
+        background: rgba(0, 128, 0, 0.439);
+        position: absolute;
+        top: 3.5vh;
+        left: -100%;
+        transition: all 1s ease-in-out;
+      }
+      section p {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: grey;
+        padding: 15px;
+      }
+      #brOpen:checked~section {
+        left: 0.5rem;
+      }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2>Ventana modal con :checked y radio buttons</h2>
-        <input type="radio" name="br" id="brOpen">
-        <input type="radio" name="br" id="brClose">
-        <label for="brOpen">Mostrar modal</label>
-        <section>
-            <label for="brClose">X</label>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto amet, vitae rem debitis autem neque
-                distinctio impedit ducimus minima sed tenetur. Modi veniam quas eius, natus consequuntur quasi dolores
-                odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit pariatur at rem numquam error
-                doloribus repellat, mollitia quo asperiores id! Vel beatae sapiente facere explicabo officiis provident
-                molestias suscipit libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi
-                aspernatur, tempore mollitia laudantium temporibus facilis impedit sapiente ducimus enim similique
-                adipisci culpa vitae accusamus nemo dolorem est quaerat eaque?</p>
-        </section>
+      <h2>Ventana modal con :checked y radio buttons</h2>
+      <input type="radio" name="br" id="brOpen">
+      <input type="radio" name="br" id="brClose">
+      <label for="brOpen">Mostrar modal</label>
+      <section>
+        <label for="brClose">X</label>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto amet, vitae rem debitis autem neque
+          distinctio impedit ducimus minima sed tenetur. Modi veniam quas eius, natus consequuntur quasi dolores
+          odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit pariatur at rem numquam error
+          doloribus repellat, mollitia quo asperiores id! Vel beatae sapiente facere explicabo officiis provident
+          molestias suscipit libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi
+          aspernatur, tempore mollitia laudantium temporibus facilis impedit sapiente ducimus enim similique
+          adipisci culpa vitae accusamus nemo dolorem est quaerat eaque?</p>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>

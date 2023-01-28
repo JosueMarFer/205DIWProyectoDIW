@@ -1,111 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 16-1</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container {
-            width: 600px;
-            height: 600px;
-            background: fuchsia;
-            margin: auto;
-        }
-
-        .boton {
-            width: 164px;
-            height: 64px;
-            color: white;
-            background-color: black;
-            text-align: center;
-            line-height: 64px;
-            margin: auto;
-            position: relative;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
-        .boton1 {
-            top: 100px;
-        }
-
-        .boton2 {
-            top: 300px;
-        }
-
-        .boton1::before {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 5px;
-            background-color: white;
-            position: absolute;
-            bottom: 0px;
-            right: 82px;
-            transition: all 0.5s ease-in;
-        }
-
-        .boton1::after {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 5px;
-            background-color: white;
-            position: absolute;
-            bottom: 0px;
-            left: 82px;
-            transition: all 0.5s ease-in;
-        }
-
-        .boton1:hover::before,
-        .boton1:hover::after {
-            width: 82px;
-        }
-
-        .boton2::before {
-            content: "";
-            display: block;
-            width: 5px;
-            height: 0px;
-            background-color: white;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            transition: all 0.5s ease-in;
-        }
-
-        .boton2::after {
-            content: "";
-            display: block;
-            width: 5px;
-            height: 0px;
-            background-color: white;
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            transition: all 0.5s ease-in;
-        }
-
-        .boton2:hover::before,
-        .boton2:hover::after {
-            height: 64px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 600px;
+        height: 600px;
+        background: fuchsia;
+        margin: auto;
+      }
+      .boton {
+        width: 164px;
+        height: 64px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        line-height: 64px;
+        margin: auto;
+        position: relative;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+      .boton1 {
+        top: 100px;
+      }
+      .boton2 {
+        top: 300px;
+      }
+      .boton1::before {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 5px;
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        right: 82px;
+        transition: all 0.5s ease-in;
+      }
+      .boton1::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 5px;
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        left: 82px;
+        transition: all 0.5s ease-in;
+      }
+      .boton1:hover::before,
+      .boton1:hover::after {
+        width: 82px;
+      }
+      .boton2::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 0px;
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        transition: all 0.5s ease-in;
+      }
+      .boton2::after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 0px;
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        transition: all 0.5s ease-in;
+      }
+      .boton2:hover::before,
+      .boton2:hover::after {
+        height: 64px;
+      }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="boton1 boton">boton1</div>
-        <div class="boton2 boton">boton2</div>
+      <div class="boton1 boton">boton1</div>
+      <div class="boton2 boton">boton2</div>
     </div>
-</body>
-
+  </body>
 </html>
