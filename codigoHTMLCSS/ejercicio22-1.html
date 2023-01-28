@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21-1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* numero de imagenes metidas en variables, para definirlas: --nombrevariable */
+        --ni: 4;
+        --lbcolor: #29f;
+      }
+      .container {
+        width: 95vw;
+        height: 95vh;
+      }
+      .carrousel {
+        top: 3rem;
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background: beige;
+        margin: auto;
+        overflow: hidden;
+      }
+      input {
+        display: none;
+      }
+      label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--lbcolor);
+      }
+      .botones {
+        position: absolute;
+        width: 100%;
+        top: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        z-index: 10;
+      }
+      main {
+        width: calc(100% * var(--ni));
+        height: 400px;
+        display: flex;
+        transition: all 0.5s ease-in;
+      }
+      #rd1:checked~main {
+        transform: translateX(-0%);
+      }
+      #rd1:checked~.botones label:nth-of-type(1) {
+        background-color: red;
+      }
+      #rd2:checked~.botones label:nth-of-type(2) {
+        background-color: red;
+      }
+      #rd3:checked~.botones label:nth-of-type(3) {
+        background-color: red;
+      }
+      #rd4:checked~.botones label:nth-of-type(4) {
+        background-color: red;
+      }
+      #rd2:checked~main {
+        transform: translateX(-25%);
+      }
+      #rd3:checked~main {
+        transform: translateX(-50%);
+      }
+      #rd4:checked~main {
+        transform: translateX(-75%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carrousel">
+        <input type="radio" name="rd" id="rd1" checked>
+        <input type="radio" name="rd" id="rd2">
+        <input type="radio" name="rd" id="rd3">
+        <input type="radio" name="rd" id="rd4">
+        <div class="botones">
+          <label for="rd1"></label>
+          <label for="rd2"></label>
+          <label for="rd3"></label>
+          <label for="rd4"></label>
+        </div>
+        <main>
+          <img src="https://picsum.photos/id/190/600/400" alt="">
+          <img src="https://picsum.photos/id/191/600/400" alt="">
+          <img src="https://picsum.photos/id/192/600/400" alt="">
+          <img src="https://picsum.photos/id/193/600/400" alt="">
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

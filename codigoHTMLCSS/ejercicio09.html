@@ -1,200 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 9</title>
     <style>
-        .container {
-            width: 75%;
-            background-color: khaki;
-        }
+      .container {
+        width: 75%;
+        background-color: khaki;
+      }
 
-        form {
-            padding: 3rem;
-        }
+      form {
+        padding: 3rem;
+      }
 
-        span {
-            color: red;
-            font-weight: bold;
-        }
+      span {
+        color: red;
+        font-weight: bold;
+      }
 
-        label {
-            display: block;
-            margin-bottom: 0.7rem;
-        }
+      label {
+        display: block;
+        margin-bottom: 0.7rem;
+      }
 
-        input {
-            border-radius: 0.3rem;
-            margin-bottom: 3rem;
-            height: 48px;
-        }
+      input {
+        border-radius: 0.3rem;
+        margin-bottom: 3rem;
+        height: 48px;
+      }
 
-        #nombre {
-            background-color: mediumturquoise;
-            width: 40vw;
-        }
+      #nombre {
+        background-color: mediumturquoise;
+        width: 40vw;
+      }
 
-        #nombre:focus {
-            box-shadow: 0 0 1rem 0.5rem violet;
-        }
+      #nombre:focus {
+        box-shadow: 0 0 1rem 0.5rem violet;
+      }
 
-        #apellidos {
-            background-color: white;
-            width: 50vw;
-        }
+      #apellidos {
+        background-color: white;
+        width: 50vw;
+      }
 
-        #apellidos:focus {
-            box-shadow: 0 0 1rem 0.5rem violet;
-        }
+      #apellidos:focus {
+        box-shadow: 0 0 1rem 0.5rem violet;
+      }
 
-        #email {
-            width: 60vw;
-        }
+      #email {
+        width: 60vw;
+      }
 
-        #email:focus {
-            box-shadow: 0 0 1rem 0.5rem violet;
-        }
+      #email:focus {
+        box-shadow: 0 0 1rem 0.5rem violet;
+      }
 
-        input[type="email"]:valid {
-            background-color: limegreen;
-        }
+      input[type="email"]:valid {
+        background-color: limegreen;
+      }
 
-        input[type="email"]:invalid {
-            background-color: red
-        }
+      input[type="email"]:invalid {
+        background-color: red
+      }
 
-        input[type="text"]:disabled {
-            background-color: grey;
-            border-color: mediumblue;
-        }
+      input[type="text"]:disabled {
+        background-color: grey;
+        border-color: mediumblue;
+      }
 
-        input[type="text"]:disabled::placeholder {
-            color: black;
-        }
+      input[type="text"]:disabled::placeholder {
+        color: black;
+      }
 
-        #lbl label {
-            display: inline-block;
-        }
+      #lbl label {
+        display: inline-block;
+      }
 
-        #lbl input {
-            height: 1rem;
-        }
+      #lbl input {
+        height: 1rem;
+      }
 
-        #lbl input:checked {
-            box-shadow: 0 0 1rem 0rem violet inset;
-        }
+      #lbl input:checked {
+        box-shadow: 0 0 1rem 0rem violet inset;
+      }
 
-        input[type="number"]:out-of-range {
-            background-color: red;
-        }
+      input[type="number"]:out-of-range {
+        background-color: red;
+      }
 
-        input[type="submit"] {
-            background-color: mediumseagreen;
-        }
+      input[type="submit"] {
+        background-color: mediumseagreen;
+      }
 
-        ul {
-            list-style: none;
-        }
+      ul {
+        list-style: none;
+      }
 
-        ul a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: black;
-        }
+      ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+      }
 
-        ul:first-of-type a::before {
-            content: "**";
-            color: red;
-            margin-right: 0.5rem;
-        }
+      ul:first-of-type a::before {
+        content: "**";
+        color: red;
+        margin-right: 0.5rem;
+      }
 
-        ul:nth-of-type(2) li a::before {
-            content: url("https://picsum.photos/32/32");
-            margin-right: 0.5rem;
-        }
+      ul:nth-of-type(2) li a::before {
+        content: url("https://picsum.photos/32/32");
+        margin-right: 0.5rem;
+      }
 
-        ul:nth-of-type(2) li a::after {
-            content: url("https://picsum.photos/32/32");
-            margin-left: 0.5rem;
-        }
+      ul:nth-of-type(2) li a::after {
+        content: url("https://picsum.photos/32/32");
+        margin-left: 0.5rem;
+      }
 
-        ul:nth-of-type(3) li:nth-of-type(odd) a::before {
-            content: '$$$ ';
-            color: coral;
-        }
+      ul:nth-of-type(3) li:nth-of-type(odd) a::before {
+        content: '$$$ ';
+        color: coral;
+      }
 
-        ul:nth-of-type(3) li:nth-of-type(even) a::before {
-            content: '€€€ ';
-            color: green;
-        }
+      ul:nth-of-type(3) li:nth-of-type(even) a::before {
+        content: '€€€ ';
+        color: green;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <form action="mentiras" method="post">
-            <fieldset>
-                <legend>Pseudo-clases en formularios</legend>
-                <label for="nombre">:required <span>*</span></label>
-                <input type="text" required placeholder="nombre" id="nombre">
-                <label for="apellidos">:focus </label>
-                <input type="text" placeholder="apellidos" id="apellidos" minlength="30" maxlength="60">
-                <label for="mail">:valid/:invalid</label>
-                <input type="email" focus placeholder="mail@mail.com" id="email">
-                <label for="disabled">:disabled <span>*</span></label>
-                <input type="text" disabled placeholder="disabled" id="disabled">
-            </fieldset>
-            <fieldset id="lbl">
-                <legend>:checkbox</legend>
-                <label>Sexo: </label>
-                <input type="checkbox" name="sex" value="m"> Hombre
-                <input type="checkbox" checked name="sex" value="f"> Mujer
-            </fieldset>
-            <fieldset id="lbl">
-                <legend>:default</legend>
-                <input type="radio" name="option" value="1"> Opcion 1
-                <input type="radio" checked name="option" value="2"> Opcion 2
-                <input type="radio" name="option" value="3"> Opcion 3
-            </fieldset>
-            <fieldset>
-                <legend>:in-range / :out-of-range</legend>
-                <label for="edad">Edad (1-120):</label>
-                <input type="number" min="1" max="120" id="edad">
-            </fieldset>
-            <fieldset>
-                <legend>Otros input</legend>
-                <label for="archivo">Archivo:</label>
-                <input type="file" id="archivo">
-                <label for="color">Color</label>
-                <input type="color" id="color">
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha">
-            </fieldset>
-            <input type="submit" value="enviar">
-        </form>
+      <form action="mentiras" method="post">
+        <fieldset>
+          <legend>Pseudo-clases en formularios</legend>
+          <label for="nombre">:required <span>*</span></label>
+          <input type="text" required placeholder="nombre" id="nombre">
+          <label for="apellidos">:focus </label>
+          <input type="text" placeholder="apellidos" id="apellidos" minlength="30" maxlength="60">
+          <label for="mail">:valid/:invalid</label>
+          <input type="email" placeholder="mail@mail.com" id="email">
+          <label for="disabled">:disabled <span>*</span></label>
+          <input type="text" disabled placeholder="disabled" id="disabled">
+        </fieldset>
+        <fieldset id="lbl">
+          <legend>:checkbox</legend>
+          <label>Sexo: </label>
+          <input type="checkbox" name="sex" value="m"> Hombre
+          <input type="checkbox" checked name="sex" value="f"> Mujer
+        </fieldset>
+        <fieldset id="lbl">
+          <legend>:default</legend>
+          <input type="radio" name="option" value="1"> Opcion 1
+          <input type="radio" checked name="option" value="2"> Opcion 2
+          <input type="radio" name="option" value="3"> Opcion 3
+        </fieldset>
+        <fieldset>
+          <legend>:in-range / :out-of-range</legend>
+          <label for="edad">Edad (1-120):</label>
+          <input type="number" min="1" max="120" id="edad">
+        </fieldset>
+        <fieldset>
+          <legend>Otros input</legend>
+          <label for="archivo">Archivo:</label>
+          <input type="file" id="archivo">
+          <label for="color">Color</label>
+          <input type="color" id="color">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha">
+        </fieldset>
+        <input type="submit" value="enviar">
+      </form>
     </div>
 
     <ul>
-        <li><a href="#">1 elemento</a></li>
-        <li><a href="#">2 elemento</a></li>
-        <li><a href="#">3 elemento</a></li>
-        <li><a href="#">4 elemento</a></li>
+      <li><a href="#">1 elemento</a></li>
+      <li><a href="#">2 elemento</a></li>
+      <li><a href="#">3 elemento</a></li>
+      <li><a href="#">4 elemento</a></li>
     </ul>
     <ul>
-        <li><a href="#">1 elemento</a></li>
-        <li><a href="#">2 elemento</a></li>
-        <li><a href="#">3 elemento</a></li>
-        <li><a href="#">4 elemento</a></li>
+      <li><a href="#">1 elemento</a></li>
+      <li><a href="#">2 elemento</a></li>
+      <li><a href="#">3 elemento</a></li>
+      <li><a href="#">4 elemento</a></li>
     </ul>
     <ul>
-        <li><a href="#">1 elemento</a></li>
-        <li><a href="#">2 elemento</a></li>
-        <li><a href="#">3 elemento</a></li>
-        <li><a href="#">4 elemento</a></li>
+      <li><a href="#">1 elemento</a></li>
+      <li><a href="#">2 elemento</a></li>
+      <li><a href="#">3 elemento</a></li>
+      <li><a href="#">4 elemento</a></li>
     </ul>
-</body>
+  </body>
 
 </html>

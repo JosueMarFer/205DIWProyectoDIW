@@ -431,6 +431,197 @@
               </a>
             </td>            
           </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Ejercicio 17.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado17.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6">
+              <a target="_blank" href="./codigoHTMLCSS/ejercicio17.html">
+                <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+              </a>
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio17.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Ejercicio 18.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado18.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6">
+              <a target="_blank" href="./codigoHTMLCSS/ejercicio18.html">
+                <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+              </a>
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio18.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Ejercicio 19.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado19.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6" class="celdaEspecial">
+              <table class="tablaDeCelda">
+                <td>
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio19-1.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+                <td>
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio19-2.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+                <td>
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio19-3.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+              </table>
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio19.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Ejercicio 20.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado20.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6">              
+              <a target="_blank" href="./codigoHTMLCSS/ejercicio20.html">
+                <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+              </a>     
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio20.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Ejercicio 21.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado21.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6">              
+              <a target="_blank" href="./codigoHTMLCSS/ejercicio21.html">
+                <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+              </a>                
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio21.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <td>
+              Ejercicio 22.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado22.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6" class="celdaEspecial">
+              <table class="tablaDeCelda">
+                <td colspan="3">
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio22-1.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+                <td colspan="3">
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio22-2.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+              </table>
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio22.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
+          <tr class="filaVacia">
+            <td></td>
+          </tr>
+          <td>
+              Ejercicio 23.
+            </td>
+            <td>
+              <a target="_blank" href="./doc/enunciado23.pdf">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar enunciado" />
+              </a>
+            </td>
+            <td colspan="6" class="celdaEspecial">
+              <table class="tablaDeCelda">
+                <td colspan="3">
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio23-1.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+                <td colspan="3">
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio23-2.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+              </table>
+            </td>
+            <td>
+              <a href="./mostrarcodigo/muestraEjercicio23.php">
+                <img src="./webroot/images/mostrarCodigo.png" alt="Mostrar Codigo" />
+              </a>
+            </td>            
+          </tr>
         </tbody>
       </table>
       <div class="return">

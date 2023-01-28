@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 22-2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* numero de imagenes metidas en variables, para definirlas: --nombrevariable */
+        --ni: 4;
+        --lbcolor: #29f;
+      }
+      .container {
+        width: 95vw;
+        height: 95vh;
+      }
+      .carrousel {
+        top: 3rem;
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background: beige;
+        margin: auto;
+        overflow: hidden;
+      }
+      input {
+        display: none;
+      }
+      label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--lbcolor);
+      }
+      .botones {
+        position: absolute;
+        width: 100%;
+        top: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        z-index: 10;
+      }
+      main {
+        width: calc(100% * var(--ni));
+        height: 400px;
+        display: flex;
+        transition: all 0.5s ease-in;
+        animation: mover 120s ease-in 15s infinite;
+      }
+      @keyframes mover {
+        0% {
+          transform: translateX(-0%);
+        }
+        2% {
+          transform: translateX(-25%);
+        }
+        16% {
+          transform: translateX(-25%);
+        }
+        18% {
+          transform: translateX(-50%);
+        }
+        32% {
+          transform: translateX(-50%);
+        }
+        34% {
+          transform: translateX(-75%);
+        }
+        48% {
+          transform: translateX(-75%);
+        }
+        50% {
+          transform: translateX(-50%);
+        }
+        64% {
+          transform: translateX(-50%);
+        }
+        66% {
+          transform: translateX(-25%);
+        }
+        80% {
+          transform: translateX(-25%);
+        }
+        82% {
+          transform: translateX(-0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carrousel">
+        <main>
+          <img src="https://picsum.photos/id/190/600/400" alt="">
+          <img src="https://picsum.photos/id/191/600/400" alt="">
+          <img src="https://picsum.photos/id/192/600/400" alt="">
+          <img src="https://picsum.photos/id/193/600/400" alt="">
+        </main>
+      </div>
+    </div>
+  </body>
+
+</html>
