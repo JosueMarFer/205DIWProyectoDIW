@@ -604,13 +604,18 @@
             </td>
             <td colspan="6" class="celdaEspecial">
               <table class="tablaDeCelda">
-                <td colspan="3">
+                <td>
                   <a target="_blank" href="./codigoHTMLCSS/ejercicio23-1.html">
                     <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
                   </a>
                 </td>
-                <td colspan="3">
+                <td>
                   <a target="_blank" href="./codigoHTMLCSS/ejercicio23-2.html">
+                    <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
+                  </a>
+                </td>
+                <td>
+                  <a target="_blank" href="./codigoHTMLCSS/ejercicio23-3.html">
                     <img src="./webroot/images/ejecutar.png" alt="Ejecutar codigo" />
                   </a>
                 </td>
