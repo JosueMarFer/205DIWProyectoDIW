@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 24-2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container>* {
+            display: grid;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            background-color: aqua;
+            grid-template-areas:
+                "header header header header"
+                "nav main main aside"
+                "nav footer footer footer";
+        }
+
+        header {
+            background-color: chocolate;
+            grid-area: header;
+        }
+
+        nav {
+            background-color: cadetblue;
+            grid-area: nav;
+        }
+
+        main {
+            background-color: coral;
+            grid-area: main;
+        }
+
+        aside {
+            background-color: forestgreen;
+            grid-area: aside;
+        }
+
+        footer {
+            background-color: gray;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
