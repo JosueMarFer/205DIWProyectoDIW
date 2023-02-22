@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            width: 100%;
+            height: 64px;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            height: 64px;
+            background: olive;
+            border: red 0.1em solid;
+            display: grid;
+            place-items: center;
+        }
+
+        a:hover {
+            filter: invert(1);
+        }
+
+        .menuPrincipal {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 64px;
+        }
+
+        .menuSecundario,
+        .menuTerciario {
+            width: 100%;
+            display: none;
+            grid-template-columns: 1fr;
+        }
+
+        .menuTerciario {
+            position: absolute;
+            top: 0;
+            left: 100%
+        }
+
+        .menuPrincipal li:hover .menuSecundario {
+            display: grid;
+        }
+
+        .menuSecundario li:hover .menuTerciario {
+            display: grid;
+        }
+
+        .menuPrincipal li:nth-of-type(5) .menuSecundario li .menuTerciario {
+            position: absolute;
+            top: 0;
+            left: -100%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="menuPrincipal">
+            <li><a href="#">Opcion 1</a></li>
+            <li><a href="#">Opcion 2</a></li>
+            <li><a href="#">Opcion 3</a>
+                <ul class="menuSecundario">
+                    <li><a href="#">subop 1</a></li>
+                    <li><a href="#">subop 2</a>
+                        <ul class="menuTerciario">
+                            <li><a href="#">sbm2Opcion 1</a></li>
+                            <li><a href="#">sbm2Opcion 2</a></li>
+                            <li><a href="#">sbm2Opcion 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">subop 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Opcion 4</a></li>
+            <li><a href="#">Opcion 5</a>
+                <ul class="menuSecundario">
+                    <li><a href="#">subop 1</a></li>
+                    <li><a href="#">subop 2</a>
+                        <ul class="menuTerciario">
+                            <li><a href="#">sbm2Opcion 1</a></li>
+                            <li><a href="#">sbm2Opcion 2</a></li>
+                            <li><a href="#">sbm2Opcion 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">subop 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

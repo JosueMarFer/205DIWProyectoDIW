@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 27</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 45%;
+            height: 50%;
+            background-color: gray;
+            margin: 30px auto;
+            border: 1px solid transparent;
+        }
+
+        main {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 400px;
+            background-color: aquamarine;
+            margin: 20px auto;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            transition: width 1s ease 0s,
+                height 1s ease 1s,
+                border-radius 1s ease 2s,
+                background-color 1s ease 3s,
+                border 1s ease 4s,
+                padding 1s ease 5s,
+                box-shadow 1s ease 6s,
+                color 1s ease 7s;
+        }
+
+        main p {
+            position: relative;
+            left: 100%
+        }
+
+        main:hover {
+            width: 250px;
+            height: 350px;
+            border-radius: 50%;
+            background-color: purple;
+            border: 1px solid yellow;
+            padding: left;
+            box-shadow: 10px 10px 5px brown;
+            color: white;
+        }
+
+        main:hover p {
+            left: 0;
+            transition: 1s ease;
+        }
+
+        main p:nth-of-type(1) {
+            transition-delay: 0s;
+        }
+
+        main p:nth-of-type(2) {
+            transition-delay: 1s;
+        }
+
+        main p:nth-of-type(3) {
+            transition-delay: 2s;
+        }
+
+        main p:nth-of-type(4) {
+            transition-delay: 3s;
+        }
+
+        main p:nth-of-type(5) {
+            transition-delay: 4s;
+        }
+
+        main p:nth-of-type(6) {
+            transition-delay: 5s;
+        }
+
+        main p:nth-of-type(7) {
+            transition-delay: 6s;
+        }
+
+        main p:nth-of-type(8) {
+            transition-delay: 7s;
+        }
+
+        .articulo {
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            border: solid 5px red;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            /* object-fit: Ajusta la imagen al marco que tienes */
+            object-fit: cover;
+        }
+
+        .articulo__capa {
+            width: 495px;
+            height: 295px;
+            background: rgba(255, 0, 0, 0.493);
+            position: absolute;
+            top: 0;
+            left: 150%;
+            transition: 1s ease 0s;
+
+        }
+
+        .articulo__text {
+            font-family: sans-serif;
+            font-size: 2rem;
+            position: absolute;
+            left: 150%;
+        }
+
+        .articulo__text--tit {
+            top: 100px;
+            transition: 1s ease 1s;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .articulo__text--descrip {
+            top: 150px;
+            transition: 1s ease 2s;
+        }
+
+        .articulo:hover .articulo__capa {
+            left: 0;
+
+        }
+
+        .articulo:hover .articulo__text--tit {
+            left: 200px;
+
+        }
+
+        .articulo:hover .articulo__text--descrip {
+            left: 160px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <h2>Voy cambiando</h2>
+            <p>Tamaño ancho</p>
+            <p>Tamañoo largo</p>
+            <p>Border radius</p>
+            <p>Color de fondo</p>
+            <p>Borde</p>
+            <p>Padding</p>
+            <p>Sombra</p>
+            <p>Color</p>
+        </main>
+    </div>
+    <article class="articulo">
+        <img class="articulo__img" src="http://picsum.photos/id/482/1000/1000">
+        <section class="articulo__capa"></section>
+        <p class="articulo__text articulo__text--tit">Titulo</p>
+        <p class="articulo__text articulo__text--descrip">Esto es una prueba</p>
+    </article>
+</body>
+
+</html>
