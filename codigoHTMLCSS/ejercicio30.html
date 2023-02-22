@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 30</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            background: hsl(180 30% 80%);
+            margin: 2rem auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 300px;
+        }
+
+        .carta {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background: hsl(230 0% 70%);
+            transform-style: preserve-3d;
+            transition: 0.5s ease;
+        }
+
+        .cara,
+        .reves {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .cara {
+            width: 100%;
+            height: 100%;
+            background: hsl(230 80% 60%);
+        }
+
+        .reves {
+            width: 100%;
+            height: 100%;
+            background: hsl(0 50% 50%);
+            transform: rotateY(180deg);
+        }
+
+        .carta:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <article class="carta">
+            <section class="cara">1</section>
+            <section class="reves">2</section>
+        </article>
+    </div>
+
+</body>
+
+</html>

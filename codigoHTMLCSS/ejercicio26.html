@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 26</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 98vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        main {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            place-items: center;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: 250px;
+            grid-template-rows: 1fr;
+            border-radius: 5px;
+        }
+
+        img {
+            border-radius: 0px 0px 5px 5px;
+            object-fit: fill;
+        }
+
+        .card:nth-child(1) {
+            background: grey;
+        }
+
+        .card:nth-child(2) {
+            background: pink;
+        }
+
+        .card:nth-child(3) {
+            background: greenyellow;
+        }
+
+        .card:nth-child(4) {
+            background: cyan;
+        }
+
+        .card:nth-child(5) {
+            background: darkslateblue;
+        }
+
+        .card:nth-child(6) {
+            background: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GALERIA DE TARJETAS CON IMAGEN</h1>
+        </header>
+        <main>
+            <div class="card">
+                <h2>El titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic, ducimus recusandae officia
+                    reiciendis cum est veritatis quis quia, in ipsa at velit rem molestiae. Deserunt eius ipsa ducimus
+                    fugit?</p>
+                <img src="http://picsum.photos/id/400/250/300" alt="Imagen tarjeta">
+            </div>
+            <div class="card">
+                <h2>El titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic, ducimus recusandae officia
+                    reiciendis cum est veritatis quis quia, in ipsa at velit rem molestiae. Deserunt eius ipsa ducimus
+                    fugit?</p>
+                <img src="http://picsum.photos/id/401/250/300" alt="Imagen tarjeta">
+            </div>
+            <div class="card">
+                <h2>El titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic, ducimus recusandae officia
+                    reiciendis cum est veritatis quis quia, in ipsa at velit rem molestiae. Deserunt eius ipsa ducimus
+                    fugit?</p>
+                <img src="http://picsum.photos/id/402/250/300" alt="Imagen tarjeta">
+            </div>
+            <div class="card">
+                <h2>El titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic, ducimus recusandae officia
+                    reiciendis cum est veritatis quis quia, in ipsa at velit rem molestiae. Deserunt eius ipsa ducimus
+                    fugit?</p>
+                <img src="http://picsum.photos/id/403/250/300" alt="Imagen tarjeta">
+            </div>
+            <div class="card">
+                <h2>El titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic, ducimus recusandae officia
+                    reiciendis cum est veritatis quis quia, in ipsa at velit rem molestiae. Deserunt eius ipsa ducimus
+                    fugit?</p>
+                <img src="http://picsum.photos/id/404/250/300" alt="Imagen tarjeta">
+            </div>
+            <div class="card">
+                <h2>El titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic, ducimus recusandae officia
+                    reiciendis cum est veritatis quis quia, in ipsa at velit rem molestiae. Deserunt eius ipsa ducimus
+                    fugit?</p>
+                <img src="http://picsum.photos/id/405/250/300" alt="Imagen tarjeta">
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

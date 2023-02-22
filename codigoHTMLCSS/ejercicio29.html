@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 29</title>
+    <style>
+        article {
+            width: 700px;
+            height: 700px;
+            background: hsl(50, 10%, 70%);
+            margin: auto;
+            position: relative;
+        }
+
+        h2 {
+            display: block;
+            width: 100%;
+        }
+
+        input {
+            display: inline-block;
+        }
+
+        label {
+            display: inline-block;
+        }
+
+        .helice {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            border-radius: .8rem;
+            box-shadow: 100px 0px 0px red,
+                -100px 0px 0px red,
+                0px 100px 0px yellow,
+                0px -100px 0px yellow;
+            transition: ease;
+            animation: rotar var(--v) linear infinite;
+        }
+
+        #x1:checked~.helice {
+            --v: 3s;
+        }
+
+        #x2:checked~.helice {
+            --v: 2s;
+        }
+
+        #x3:checked~.helice {
+            --v: 1s;
+        }
+
+        #stop:checked~.helice {
+            --v: 0s;
+        }
+
+
+        @keyframes rotar {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h2>Seleccione velocidad</h2>
+        <input type="radio" name="rd" id="x1">
+        <label for="x1">X1</label>
+        <input type="radio" name="rd" id="x2">
+        <label for="x2">X2</label>
+        <input type="radio" name="rd" id="x3">
+        <label for="x3">X3</label>
+        <input type="radio" name="rd" id="stop">
+        <label for="stop">STOP</label>
+
+        <div class="helice"></div>
+    </article>
+</body>
+
+</html>
